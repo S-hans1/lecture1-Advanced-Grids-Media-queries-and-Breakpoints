@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+
+    <style>
+
+        .container{
+            height: 700px;
+            width: 500px;
+            border: 1px solid brown;
+            background-color: orange;
+            display: grid;
+
+            grid-template-rows: 30px 1fr 1fr 30px;
+            grid-template-columns: 1fr;
+
+            grid-template-areas: 
+            "hd"
+            "side"
+            "main"
+            "ft";
+
+        }
+
+        #header{
+            grid-area: hd;
+        }
+        #sidebar{
+            grid-area: side;
+        }
+        #content{
+            grid-area: main;
+        }
+        #footer{
+            grid-area: ft ;
+        }
+
+        .box{
+            border: 1px solid red;
+            background-color: aquamarine;
+        }
+
+        .box{
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" id="header">Header
+            <a href="Blog Website.html">Click Here to move backward</a>
+        </div>
+        
+
+        <div class="box" id="sidebar">Sidebar</div>
+        <div class="box" id="content">Content</div>
+        <div class="box" id="footer">Footer</div>
+       
+    </div>
+    
+</body>
+</html>

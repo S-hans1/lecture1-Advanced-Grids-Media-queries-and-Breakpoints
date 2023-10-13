@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Properties</title>
+    <style>
+        .container{
+            height: 700px;
+            width: 600px;
+            border: 1px solid brown;
+            background-color: orange;
+            display: grid;
+
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px;
+            grid-gap: 1rem;
+
+/* 
+            justify-content: start;
+            justify-content:end ;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+/* 
+            align-content: start;
+            align-content: baseline;
+            align-content: end;
+            align-content: center;
+            align-content: space-around;
+            align-content:space-between; 
+
+            align-items: start;
+            align-items: center;
+            align-items: end;
+            align-items: stretch;
+
+            justify-items: end;
+            justify-items: start;
+            justify-items: center;
+            justify-items: stretch; */
+
+            /* justify-content: center;
+            align-content: center;
+
+
+            place-content: start;
+            place-content: end;
+            place-content: center;*/
+
+        
+
+            place-items: end;
+            place-items: start;
+            place-items: center;
+            place-items: stretch;
+
+   
+        }
+        .box{
+            border: 1px solid red; 
+            background-color: aqua;
+        }
+
+        #box1{
+            /* justify-self: start;
+            justify-self: end;
+            justify-self: center; */
+            
+            /* align-self: center;
+            align-self: start;
+            align-self: end; */
+
+            /* place-self: stretch;
+            place-self: start;
+            place-self: end;
+            place-self: center; */
+
+           
+  
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">B1</div>
+        <div class="box">B2</div>
+        <div class="box">B3</div>
+        <div class="box">B4</div>
+        <div class="box">B5</div>
+        <div class="box">B6</div>
+    </div>
+    
+</body>
+</html>
+
+
+
+<!-- container properties -->
+<!-- justify content- start,end,center, spacebtwn,spacearound,spaceevenly -->
+<!-- align content- same -->
+<!-- place content -->
+<!-- align  items, place items -->
+
+<!-- child/grid/items properties ye properties particular child/items pe apply hongi -->
+<!-- justify self-start
+align self-
+place self -->
+
+
+
